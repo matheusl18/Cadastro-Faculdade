@@ -14,10 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Arquivos {
-	public static List<Aluno> loadAlunos(String filePath){
+	public static Set<Aluno> loadAlunos(String filePath){
 
         
-        List<Aluno> alunos = new ArrayList<>();
+        Set<Aluno> alunos = new TreeSet<>();
 
         try (   InputStream is = new FileInputStream(filePath);
                 InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
@@ -52,7 +52,7 @@ public class Arquivos {
 
     }
 
-    public static void saveAlunos(List<Aluno> alunos, String filePath){
+    public static void saveAlunos(Set<Aluno> alunos, String filePath){
 
         try(    OutputStream os = new FileOutputStream(filePath/*, true*/);
                 OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_8);
@@ -67,10 +67,10 @@ public class Arquivos {
         }
 
     }
-    public static List<Curso> loadCursos(String filePath){
+    public static Set<Curso> loadCursos(String filePath){
     	
         
-        List<Curso> cursos = new ArrayList<>();
+        Set<Curso> cursos = new TreeSet<>();
 
         try (   InputStream is = new FileInputStream(filePath);
                 InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
@@ -106,7 +106,7 @@ public class Arquivos {
 
     }
 
-    public static void saveCursos(List<Curso> cursos, String filePath){
+    public static void saveCursos(Set<Curso> cursos, String filePath){
 
         try(    OutputStream os = new FileOutputStream(filePath/*, true*/);
                 OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_8);
