@@ -5,7 +5,7 @@ import java.util.List;
 public class Teste {
 public static void main(String[] args) {
 		
-		List<Aluno> alunos = Arquivos.loadAlunos("C:\\Facul\\Aps Java/Alunos.csv");
+		Set<Aluno> alunos = Arquivos.loadAlunos("C:\\Facul\\Aps Java/Alunos.csv");
 		for(Aluno aluno: alunos){
             System.out.println(aluno);
 		}
@@ -20,7 +20,7 @@ public static void main(String[] args) {
 	
 
 	
-	List<Curso> cursos = Arquivos.loadCursos("C:\\Facul\\Aps Java/Curso.csv");
+	Set<Curso> cursos = Arquivos.loadCursos("C:\\Facul\\Aps Java/Curso.csv");
 	for(Curso curso: cursos){
         System.out.println(curso);
 	}
