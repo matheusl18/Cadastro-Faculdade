@@ -10,8 +10,9 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
 
 public class Arquivos {
 	public static Set<Aluno> loadAlunos(String filePath){
