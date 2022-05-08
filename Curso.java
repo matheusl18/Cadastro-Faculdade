@@ -16,11 +16,20 @@ public class Curso implements Comparable<Curso>{
 	public String getNome() {
 		return this.nome;
 	}
+        public void setNome(String nome) {
+		this.nome = nome;
+	}
 	public String getNivel() {
 		return this.nivel;
 	}
+        public void setNivel(String nivel) {
+		this.nivel = nivel;
+	}
 	public int getAno() {
 		return this.ano;
+	}
+        public void setAno(int ano) {
+		this.ano = ano;
 	}
 	@Override
 	public boolean equals(Object o) {
