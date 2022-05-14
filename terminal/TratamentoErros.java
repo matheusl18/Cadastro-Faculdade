@@ -189,7 +189,7 @@ public class TratamentoErros implements Visualizacao{
 		String str = in.nextLine();
 		return str.trim();
 	}
-	public String getInt() {
+	public int getInt() {
 		Scanner in = new Scanner(System.in);
 		int num = in.nextInt();
 		return num;
